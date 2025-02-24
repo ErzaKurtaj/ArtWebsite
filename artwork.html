@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art and Culture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/artwork.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <script src="main.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title">
+                <img src="images/art.png" alt="Logo" class="logo"> 
+                <h1>Art and Culture</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Types of Art</a></li>
+                    <li><a href="artwork.html">Artwork Presentations</a></li>
+                    <li><a href="interview.html">Techniques</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+
+    <section class="exhibitions-section">
+        <h1 class="animated-heading">EXPOSITIONS</h1>
+        <div class="exhibitions">
+            <div class="exhibition-item">
+                <img src="images/unreal.jpg" alt="English Landscape Painting">
+                <p class="title">English Landscape Painting</p>
+                <p class="date">August 2023</p>
+            </div>
+            <div class="exhibition-item">
+                <img src="images/second.jpg" alt="Les Fleurs Du Mal - The French Masters">
+                <p class="title">Les Fleurs Du Mal - The French Masters</p>
+                <p class="date">August 2023</p>
+            </div>
+            <div class="exhibition-item">
+                <img src="images/photos.jpg" alt="Arts At The Limits Of Reason">
+                <p class="title">Arts At The Limits Of Reason</p>
+                <p class="date">August 2023</p>
+            </div>
+            <div class="exhibition-item">
+                <img src="images/pastel.jpg" alt="Nineteenth-Century Pastel Portraits">
+                <p class="title">Nineteenth-Century Pastel Portraits</p>
+                <p class="date">August 2023</p>
+            </div>
+            <div class="exhibition-item">
+                <img src="images/time.jpg" alt="Arts At The Limits Of Reason">
+                <p class="title">Arts At The Limits Of Reason</p>
+                <p class="date">August 2023</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-info">
+        <h2>The Art Gallery of San Francisco</h2>
+        <div class="info-content">
+            <div class="info-text">
+                <p class="animated-paragraph">The Art Gallery of San Francisco is a beacon of creativity and inspiration, nestled in the heart of the city. This gallery serves as a vibrant hub for artists, art enthusiasts, and cultural explorers alike. With its eclectic mix of contemporary and classic artworks, the gallery provides a platform for both emerging and established artists to showcase their talents. Visitors are invited to immerse themselves in a diverse array of artistic expressions, from intricate paintings and innovative sculptures to thought-provoking installations.</p>
+                <p class="animated-paragraph">In our featured video, we take you behind the scenes into the captivating process of creating a painting. Watch as the artist skillfully brings a blank canvas to life with bold strokes and delicate details.</p>
+            </div>       
+            <div class="info-image">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=7599893115514176" height="523" width="355" frameborder="0" scrolling="no" ></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery">
+        <div class="artwork-card">
+            <img src="images/pic.jpg" alt="Artwork 1">
+            <h2>Reflection of Serenity</h2>
+            <button onclick="viewMore('artwork1')">View More <i class="fa-solid fa-eye"></i></button>
+        </div>
+        <div class="artwork-card">
+            <img src="images/wood.jpg" alt="Artwork 2">
+            <h2>Ethereal Grace</h2>
+            <button onclick="viewMore('artwork2')">View More <i class="fa-solid fa-eye"></i></button>
+        </div>
+        <div class="artwork-card">
+            <img src="images/photoo.jpg" alt="Artwork 3">
+            <h2>Captured Moments</h2>
+            <button onclick="viewMore('artwork3')">View More <i class="fa-solid fa-eye"></i></button>
+        </div>
+        <div class="artwork-card">
+            <img src="images/archite.jpg" alt="Artwork 4">
+            <h2>Modern Tranquility</h2>
+            <button onclick="viewMore('artwork4')">View More <i class="fa-solid fa-eye"></i></button>
+        </div>
+        <div class="artwork-card">
+            <img src="images/digitalart.jpg" alt="Artwork 5">
+            <h2>Digital Harmony</h2>
+            <button onclick="viewMore('artwork5')">View More <i class="fa-solid fa-eye"></i></button>
+        </div>
+    </section>
+
+    <div id="artwork1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artwork1')">&times;</span>
+            <img src="images/pic.jpg" alt="Artwork 1">
+            <h2>Reflection of Serenity</h2>
+            <p>Isabella Marquez</p>
+            <p>This captivating painting portrays a girl immersed in thought, her serene expression beautifully captured with delicate brushstrokes. The artist masterfully blends vibrant colors and soft shadows, creating a sense of depth and emotion. </p>
+            <p>Isabella Marquez is a talented and imaginative painter known for her expressive and evocative artworks. With a keen eye for detail and a passion for storytelling through art, Marquez explores themes of human emotion, identity, and the beauty of everyday moments.</p>
+        </div>
+    </div>
+    <div id="artwork2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artwork2')">&times;</span>
+            <img src="images/wood.jpg" alt="Artwork 2">
+            <h2>Ethereal Grace</h2>
+            <p>Lucas Reinhart</p>
+            <p>"Ethereal Grace" is a stunning wood sculpture that captures the delicate balance between strength and fragility. Carved from a single piece of rich mahogany</p>
+            <p>Lucas Reinhart is a renowned sculptor celebrated for his masterful work in wood. With a background in fine arts and a passion for exploring the dynamic relationship between nature and human form, Reinhart’s sculptures are known for their intricate details and emotional depth. </p>
+        </div>
+    </div>
+    <div id="artwork3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artwork3')">&times;</span>
+            <img src="images/photoo.jpg" alt="Artwork 3">
+            <h2>Captured Moments</h2>
+            <p>Emily Hart</p>
+            <p>"Captured Moments" is a captivating collection of photographs that showcase the beauty and diversity of everyday life. The inclusion of a classic camera in the display emphasizes the artistry and craftsmanship behind each shot, reminding viewers of the timeless nature of photography.</p>
+            <p>Emily Hart is a gifted photographer known for her evocative and poignant imagery. With a background in visual arts and a deep passion for storytelling, Hart's work spans various genres, including landscape, portrait, and street photography.</p>
+        </div>
+    </div>
+    <div id="artwork4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artwork4')">&times;</span>
+            <img src="images/archite.jpg" alt="Artwork 4">
+            <h2>Modern Tranquility</h2>
+            <p>Alexander Foster</p>
+            <p>"Modern Tranquility" is a meticulously detailed architectural drawing that envisions a contemporary living room designed for comfort and elegance.</p>
+            <p>Alexander Foster is a distinguished architect and illustrator renowned for his innovative and aesthetic designs. </p>
+        </div>
+    </div>
+    <div id="artwork5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artwork5')">&times;</span>
+            <img src="images/digitalart.jpg" alt="Artwork 5">
+            <h2>Digital Harmony</h2>
+            <p> Sophia Lang</p>
+            <p>"Digital Harmony" is a striking digital art piece that captures the essence of a modern living room through vibrant colors and dynamic composition. Sophia Lang utilizes cutting-edge digital techniques to create an immersive and visually appealing scene, where every element from the furniture to the decor is meticulously crafted</p>
+            <p>Sophia Lang is a talented digital artist known for her innovative and captivating creations. With a background in graphic design and digital media, Lang's work spans various forms of visual art, including digital illustrations, animations, and 3D renderings.</p>
+        </div>
+    </div>
+
+    <section class="artist-section">
+        <div class="artist-content">
+            <img src="images/sun.jpg" alt="Artist Image">
+            <div class="artist-info">
+                <h2>Celeste Albright</h2>
+                <p>"Sunset at Sea" is a mesmerizing painting capturing the serene beauty of the ocean as the sun dips below the horizon. The vibrant hues of orange, pink, and purple blend seamlessly, reflecting off the calm waters to create a stunning display of nature's splendor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="artist-section">
+        <div class="artist-content">
+            <div class="artist-info">
+                <h2>Vivian Rosetti</h2>
+                <p>"Elegance in Stone" is a striking vase sculpture that embodies timeless sophistication and grace. Crafted with meticulous attention to detail, this sculpture showcases a harmonious blend of smooth curves and intricate patterns. </p>
+            </div>
+            <img src="images/sculpt.jpg" alt="Artist Image" class="sculpt">
+        </div>
+    </section>
+    
+    </section>
+    <section class="artist-section">
+        <div class="artist-content">
+            <img src="images/moon.jpg" alt="Artist Image">
+            <div class="artist-info">
+                <h2>Aurora Bellamy</h2>
+                <p>"Moonlit Rome" captures the enchanting allure of the Eternal City under the night sky. The photograph presents Rome’s iconic landmarks bathed in the soft, silvery glow of a full moon, casting an ethereal light over ancient streets and majestic architecture. The contrast between the deep, velvety shadows and the moon’s luminous embrace creates a captivating scene that highlights the city’s timeless beauty.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-artists">
+        <h2>WORLDWIDE ARTISTS</h2>
+        <div class="artists-container">
+            <div class="artist-profile">
+                <img src="images/leonardo.jpg" alt="Artist 1">
+                <h3>Leonardo Da Vinci</h3>
+                <p>Leonardo da Vinci (1452-1519) was an Italian Renaissance artist, scientist, and polymath.Leonardo's artistic style is characterized by his keen observation of nature, and innovative techniques. He is known for his use of sfumato, a technique that creates a soft, gradual transition between colors and tones, lending a lifelike quality to his paintings.Leonardo excelled in multiple fields, including painting, drawing, engineering, anatomy, and physics.
+                    Mona Lisa (La Gioconda): Perhaps the most famous painting in the world, known for its enigmatic smile and masterful use of sfumato.
+                    The Last Supper (Il Cenacolo): A mural depicting the moment Jesus announces that one of his disciples will betray him, celebrated for its composition and emotional intensity.
+                    Vitruvian Man: A drawing that explores the proportions of the human body, illustrating the blend of art and science in Leonardo's work.Leonardo da Vinci's legacy as a master of both art and science endures, making him an enduring symbol of the Renaissance spirit of inquiry and creativity. His works continue to inspire and influence artists, scientists, and thinkers around the world.</p>
+            </div>
+            <div class="artist-profile">
+                <img src="images/johannes.jpg" alt="Artist 2">
+                <h3>Johannes Vermeer</h3>
+                <p>Johannes Vermeer (1632-1675) was a Dutch Baroque painter renowned for his masterful use of light and color.Vermeer's artistic style is characterized by his meticulous attention to detail. He often used a technique known as "pointillé," a type of fine dotting to create texture and depth. Notable Works
+                    Girl with a Pearl Earring: Often referred to as the "Mona Lisa of the North," this painting is celebrated for its captivating portrayal of a young girl turning toward the viewer, her expression both enigmatic and engaging.
+                    The Milkmaid: This painting depicts a domestic scene of a maidservant pouring milk, showcasing Vermeer's talent for capturing the subtleties of light and texture.
+                    The Art of Painting: Also known as "The Allegory of Painting," this work is believed to be a self-portrait of Vermeer, illustrating an artist at work in his studio, with a model posed as Clio, the muse of history.Johannes Vermeer's legacy is defined by his exquisite treatment of light and his ability to infuse everyday scenes with a sense of timeless beauty. His work continues to be celebrated and studied, making him one of the most revered painters in the history of Western art.</p>
+            </div>
+            <div class="artist-profile">
+                <img src="images/VanG.jpg" alt="Artist 2">
+                <h3>Van Gogh</h3>
+                <p>Vincent van Gogh (1853-1890) was a Dutch Post-Impressionist painter whose work has had a profound and lasting impact on the art world.Van Gogh's style is characterized by bold, dramatic brush strokes, vibrant colors, and emotional intensity. He often used thick applications of paint, known as impasto, to add texture to his works.His style evolved significantly over his short career, moving from dark tones to the bright, expressive palettes for which he is best known.Although Van Gogh created over 2,100 artworks, including around 860 oil paintings, he was not successful and sold very few pieces.
+                    Starry Night: One of Van Gogh's most famous paintings, this work depicts a swirling night sky over a quiet town, showcasing his unique ability to convey movement and emotion through color and form.
+                    Sunflowers: A series of still life paintings of sunflowers in a vase, notable for their vibrant yellow tones and textured surfaces, reflecting Van Gogh's fascination with color and nature.
+                    The Bedroom: This painting of Van Gogh's simple bedroom in Arles is celebrated for its use of color and perspective, creating a sense of intimacy and personal reflection.
+                    Vincent van Gogh's legacy is marked by his profound influence on 20th-century art.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="art-creation">
+        <h2>Create Your Own Art</h2>
+        <div class="canvas-container">
+            <canvas id="artCanvas" width="600" height="400"></canvas>
+            <div class="tools">
+                <input type="color" id="colorPicker" value="#000000">
+                <button onclick="clearCanvas()">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Art and Culture is dedicated to providing insightful content about various forms of art and culture, including articles, interviews, and presentations.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@artandculture.com">info@artandculture.com</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section follow">
+                <h3>Follow Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="images/instagram.webp" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Art and Culture. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
