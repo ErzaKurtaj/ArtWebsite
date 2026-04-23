@@ -377,3 +377,53 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  box-shadow: none;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar nav {
+    display: none;
+    width: 100%;
+  }
+  .navbar.nav-open nav {
+    display: block;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .navbar nav ul li {
+    margin: 0.25rem 0;
+  }
+  .showcase h1 {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+  .showcase p {
+    font-size: 16px;
+  }
+  .video-gallery {
+    height: auto;
+  }
+  .video iframe {
+    height: 220px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+

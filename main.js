@@ -11,6 +11,33 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       });
   });
+
+  const navToggle = document.querySelector('.navbar__toggle');
+  const navbar    = document.querySelector('.navbar');
+
+  if (navToggle && navbar) {
+    navToggle.addEventListener('click', function () {
+      const isOpen = navbar.classList.toggle('navbar--open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close when clicking outside the navbar
+    document.addEventListener('click', function (e) {
+      if (!navbar.contains(e.target) && navbar.classList.contains('navbar--open')) {
+        navbar.classList.remove('navbar--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close on Escape and return focus to toggle
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navbar.classList.contains('navbar--open')) {
+        navbar.classList.remove('navbar--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.focus();
+      }
+    });
+  }
 });
 
 // Modal functionality
@@ -34,13 +61,15 @@ window.onclick = function(event) {
 
 // Canvas drawing functionality
 const canvas = document.getElementById('artCanvas');
-const context = canvas.getContext('2d');
+const context = canvas ? canvas.getContext('2d') : null;
 let drawing = false;
 let currentTool = 'brush';
 
-canvas.addEventListener('mousedown', startDrawing);
-canvas.addEventListener('mouseup', stopDrawing);
-canvas.addEventListener('mousemove', draw);
+if (canvas) {
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mouseup', stopDrawing);
+  canvas.addEventListener('mousemove', draw);
+}
 
 function startDrawing(event) {
     drawing = true;

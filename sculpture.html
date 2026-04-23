@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art and Culture</title>
-    <link rel="stylesheet" href="css/sculpture.css"> 
+    <link rel="stylesheet" href="css/sculpture.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="main.js"></script>
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo-title">
-                <img src="images/art.png" alt="Logo" class="logo"> 
-                <h1>Art and Culture</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Types of Art</a></li>
-                    <li><a href="artwork.html">Artwork Presentations</a></li>
-                    <li><a href="interview.html">Techniques</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="navbar__brand">
+                <img src="images/art.png" alt="Art and Culture logo" class="navbar__logo">
+                <span class="navbar__title">Art and Culture</span>
+            </a>
+            <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+                <span class="navbar__bar" aria-hidden="true"></span>
+                <span class="navbar__bar" aria-hidden="true"></span>
+                <span class="navbar__bar" aria-hidden="true"></span>
+            </button>
+            <ul class="navbar__menu" id="navbar-menu" role="list">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Types of Art</a></li>
+                <li class="navbar__item"><a href="artwork.html" class="navbar__link">Artwork Presentations</a></li>
+                <li class="navbar__item"><a href="interview.html" class="navbar__link">Techniques</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__link">About Us</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="section" id="3d-showcase">
         <h2 class="title3d">3D SCULPTURE CUBE</h2>

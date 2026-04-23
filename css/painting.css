@@ -405,3 +405,61 @@ footer {
 .photo6 { transform: rotate(-180deg); }
 .photo7 { transform: rotate(-180deg); }
 .photo8 { transform: rotate(-180deg); }
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  box-shadow: none;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar nav {
+    display: none;
+    width: 100%;
+  }
+  .navbar.nav-open nav {
+    display: block;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .navbar nav ul li {
+    margin: 0.25rem 0;
+  }
+  .history-content {
+    flex-direction: column;
+  }
+  .history-content p {
+    margin-left: 0;
+  }
+  .history-text {
+    margin-right: 0;
+  }
+  .history-image img {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .tool {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tool-image {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

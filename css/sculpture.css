@@ -315,3 +315,85 @@ footer {
   from { transform: rotateX(-20deg) rotateY(30deg); }
   to { transform: rotateX(-20deg) rotateY(390deg); }
 }
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  box-shadow: none;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar nav {
+    display: none;
+    width: 100%;
+  }
+  .navbar.nav-open nav {
+    display: block;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .navbar nav ul li {
+    margin: 0.25rem 0;
+  }
+  .section .title3d {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  .showcase-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase-container {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cube-face {
+    width: 200px;
+    height: 200px;
+  }
+  .cube-face-front { transform: translateZ(100px); }
+  .cube-face-back { transform: rotateY(180deg) translateZ(100px); }
+  .cube-face-left { transform: rotateY(-90deg) translateZ(100px); }
+  .cube-face-right { transform: rotateY(90deg) translateZ(100px); }
+  .cube-face-top { transform: rotateX(90deg) translateZ(100px); }
+  .cube-face-bottom { transform: rotateX(-90deg) translateZ(100px); }
+  .history-content {
+    flex-direction: column;
+  }
+  .history-content p {
+    margin-left: 0;
+  }
+  .history-text {
+    margin-right: 0;
+  }
+  .history-image img {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .tool {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tool-image {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

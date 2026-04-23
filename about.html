@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art and Culture</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="main.js"></script>
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo-title">
-                <img src="images/art.png" alt="Logo" class="logo"> 
-                <h1>Art and Culture</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Types of Art</a></li>
-                    <li><a href="artwork.html">Artwork Presentations</a></li>
-                    <li><a href="interview.html">Techniques</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="navbar__brand">
+                <img src="images/art.png" alt="Art and Culture logo" class="navbar__logo">
+                <span class="navbar__title">Art and Culture</span>
+            </a>
+            <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+                <span class="navbar__bar" aria-hidden="true"></span>
+                <span class="navbar__bar" aria-hidden="true"></span>
+                <span class="navbar__bar" aria-hidden="true"></span>
+            </button>
+            <ul class="navbar__menu" id="navbar-menu" role="list">
+                <li class="navbar__item"><a href="index.html" class="navbar__link">Types of Art</a></li>
+                <li class="navbar__item"><a href="artwork.html" class="navbar__link">Artwork Presentations</a></li>
+                <li class="navbar__item"><a href="interview.html" class="navbar__link">Techniques</a></li>
+                <li class="navbar__item"><a href="about.html" class="navbar__link">About Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="about-us">
         <div class="text-container">
             <h1>About Us</h1>
-            <p>Our organization is dedicated to celebrating and promoting the arts. We strive to create a vibrant community where creativity flourishes and cultural exchange is encouraged. Join us in our mission to inspire and support artists and art enthusiasts alike.</p>
+            <p class="text-container__lead">Our organization is dedicated to celebrating and promoting the arts.</p>
+            <p class="text-container__body">We strive to create a vibrant community where creativity flourishes and cultural exchange is encouraged. Join us in our mission to inspire and support artists and art enthusiasts alike.</p>
+            <div class="text-container__tags">
+                <span class="text-tag">Community</span>
+                <span class="text-tag">Culture</span>
+                <span class="text-tag">Creativity</span>
+            </div>
         </div>
         <div class="image-container">
             <img src="images/brush.jpg" alt="Brushes">
@@ -90,17 +100,57 @@
         </div>
     </section>
 
-    <div class="testimonials">
-        <h2>What Our Participants Say</h2>
-        <div class="testimonial">
-            <p>"The art workshop was amazing! I learned so much and had a great time."</p>
-            <p class="author">- Jane Doe</p>
+    <section class="testimonials">
+        <div class="testimonials__header">
+            <span class="testimonials__label">Testimonials</span>
+            <h2 class="testimonials__title">What Our Participants Say</h2>
+            <p class="testimonials__subtitle">Hear from the artists and enthusiasts who have been part of our community.</p>
         </div>
-        <div class="testimonial">
-            <p>"The exhibition was breathtaking. I discovered so many new artists and styles."</p>
-            <p class="author">- John Smith</p>
+        <div class="testimonials__grid">
+            <article class="testimonial-card">
+                <span class="testimonial-card__quote" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonial-card__text">
+                    The art workshop was amazing! I learned so much and had a great time. Every session felt like a new discovery.
+                </blockquote>
+                <footer class="testimonial-card__footer">
+                    <div class="testimonial-card__avatar testimonial-card__avatar--warm" aria-hidden="true">JD</div>
+                    <div class="testimonial-card__info">
+                        <cite class="testimonial-card__name">Jane Doe</cite>
+                        <span class="testimonial-card__role">Workshop Participant</span>
+                    </div>
+                    <div class="testimonial-card__stars" aria-label="5 out of 5 stars" aria-hidden="true">★★★★★</div>
+                </footer>
+            </article>
+            <article class="testimonial-card">
+                <span class="testimonial-card__quote" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonial-card__text">
+                    The exhibition was breathtaking. I discovered so many new artists and styles that I had never seen before.
+                </blockquote>
+                <footer class="testimonial-card__footer">
+                    <div class="testimonial-card__avatar testimonial-card__avatar--dark" aria-hidden="true">JS</div>
+                    <div class="testimonial-card__info">
+                        <cite class="testimonial-card__name">John Smith</cite>
+                        <span class="testimonial-card__role">Exhibition Visitor</span>
+                    </div>
+                    <div class="testimonial-card__stars" aria-label="5 out of 5 stars" aria-hidden="true">★★★★★</div>
+                </footer>
+            </article>
+            <article class="testimonial-card">
+                <span class="testimonial-card__quote" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonial-card__text">
+                    Attending the international program opened my eyes to art forms I had never encountered before. Truly life-changing.
+                </blockquote>
+                <footer class="testimonial-card__footer">
+                    <div class="testimonial-card__avatar testimonial-card__avatar--rose" aria-hidden="true">MC</div>
+                    <div class="testimonial-card__info">
+                        <cite class="testimonial-card__name">Maria Chen</cite>
+                        <span class="testimonial-card__role">Art Enthusiast</span>
+                    </div>
+                    <div class="testimonial-card__stars" aria-label="5 out of 5 stars" aria-hidden="true">★★★★★</div>
+                </footer>
+            </article>
         </div>
-    </div>
+    </section>
     
     <footer>
         <div class="footer-content">

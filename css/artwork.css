@@ -539,3 +539,69 @@ button .fas {
       transform: rotate(0deg) scale(1);
   }
 }
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none !important;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar nav {
+    display: none;
+    width: 100%;
+  }
+  .navbar.nav-open nav {
+    display: block;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .navbar nav ul li {
+    margin: 0.25rem 0;
+  }
+  .artwork-card {
+    width: calc(100% - 2em);
+  }
+  .artwork-card img {
+    height: 250px;
+  }
+  .artist-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .artist-content img,
+  .artist-content .sculpt {
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+  .artist-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  canvas {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .artwork-card img {
+    height: 180px;
+  }
+  .artist-profile img {
+    height: 200px;
+  }
+}

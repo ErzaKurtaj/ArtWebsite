@@ -1,0 +1,191 @@
+/* ===================================================================
+   NAVBAR — mobile-first, accessible, production-ready
+   =================================================================== */
+
+/* Neutralise legacy header styles from page CSS files */
+header {
+  background: none;
+  box-shadow: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #DDD0C8, #323232);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 100;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ── Brand (logo + title) ─────────────────────────────────────────── */
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.navbar__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #080808;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.navbar__brand:hover .navbar__title {
+  color: #fff;
+}
+
+.navbar__brand:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ── Hamburger toggle — hidden on desktop ─────────────────────────── */
+.navbar__toggle {
+  display: none;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  /* override any global button styles */
+  box-shadow: none;
+  border-radius: 6px;
+}
+
+.navbar__toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar__toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Three animated bars */
+.navbar__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.28s ease, opacity 0.2s ease;
+  transform-origin: center;
+}
+
+/* Animate bars → ✕ when menu is open */
+.navbar--open .navbar__toggle .navbar__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar--open .navbar__toggle .navbar__bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.navbar--open .navbar__toggle .navbar__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Nav menu — horizontal row on desktop ─────────────────────────── */
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+.navbar__link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.25s, color 0.25s;
+}
+
+.navbar__link:hover {
+  background: #fff;
+  color: #1f0406;
+}
+
+.navbar__link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 2px;
+  border-radius: 20px;
+}
+
+/* ===================================================================
+   MOBILE — ≤ 768 px
+   =================================================================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.65rem 1rem;
+  }
+
+  /* Reveal hamburger */
+  .navbar__toggle {
+    display: flex;
+  }
+
+  /* Collapse nav by default */
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0.35rem 0 0.25rem;
+    margin-top: 0.4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    gap: 0;
+  }
+
+  /* Reveal when toggle is active */
+  .navbar--open .navbar__menu {
+    display: flex;
+  }
+
+  .navbar__link {
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .navbar__item:last-child .navbar__link {
+    border-bottom: none;
+  }
+}
