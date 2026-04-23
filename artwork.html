@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art and Culture</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/artwork.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="assets/css/artwork.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-    <script src="main.js" defer></script> 
+    <script src="assets/js/main.js" defer></script> 
 </head>
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <a href="index.html" class="navbar__brand">
-                <img src="images/art.png" alt="Art and Culture logo" class="navbar__logo">
+                <img src="assets/images/art.png" alt="Art and Culture logo" class="navbar__logo">
                 <span class="navbar__title">Art and Culture</span>
             </a>
             <button class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
@@ -37,27 +37,27 @@
         <h1 class="animated-heading">EXPOSITIONS</h1>
         <div class="exhibitions">
             <div class="exhibition-item">
-                <img src="images/unreal.jpg" alt="English Landscape Painting">
+                <img src="assets/images/unreal.jpg" alt="English Landscape Painting">
                 <p class="title">English Landscape Painting</p>
                 <p class="date">August 2023</p>
             </div>
             <div class="exhibition-item">
-                <img src="images/second.jpg" alt="Les Fleurs Du Mal - The French Masters">
+                <img src="assets/images/second.jpg" alt="Les Fleurs Du Mal - The French Masters">
                 <p class="title">Les Fleurs Du Mal - The French Masters</p>
                 <p class="date">August 2023</p>
             </div>
             <div class="exhibition-item">
-                <img src="images/photos.jpg" alt="Arts At The Limits Of Reason">
+                <img src="assets/images/photos.jpg" alt="Arts At The Limits Of Reason">
                 <p class="title">Arts At The Limits Of Reason</p>
                 <p class="date">August 2023</p>
             </div>
             <div class="exhibition-item">
-                <img src="images/pastel.jpg" alt="Nineteenth-Century Pastel Portraits">
+                <img src="assets/images/pastel.jpg" alt="Nineteenth-Century Pastel Portraits">
                 <p class="title">Nineteenth-Century Pastel Portraits</p>
                 <p class="date">August 2023</p>
             </div>
             <div class="exhibition-item">
-                <img src="images/time.jpg" alt="Arts At The Limits Of Reason">
+                <img src="assets/images/time.jpg" alt="Arts At The Limits Of Reason">
                 <p class="title">Arts At The Limits Of Reason</p>
                 <p class="date">August 2023</p>
             </div>
@@ -79,27 +79,27 @@
 
     <section class="gallery">
         <div class="artwork-card">
-            <img src="images/pic.jpg" alt="Artwork 1">
+            <img src="assets/images/pic.jpg" alt="Artwork 1">
             <h2>Reflection of Serenity</h2>
             <button onclick="viewMore('artwork1')">View More <i class="fa-solid fa-eye"></i></button>
         </div>
         <div class="artwork-card">
-            <img src="images/wood.jpg" alt="Artwork 2">
+            <img src="assets/images/wood.jpg" alt="Artwork 2">
             <h2>Ethereal Grace</h2>
             <button onclick="viewMore('artwork2')">View More <i class="fa-solid fa-eye"></i></button>
         </div>
         <div class="artwork-card">
-            <img src="images/photoo.jpg" alt="Artwork 3">
+            <img src="assets/images/photoo.jpg" alt="Artwork 3">
             <h2>Captured Moments</h2>
             <button onclick="viewMore('artwork3')">View More <i class="fa-solid fa-eye"></i></button>
         </div>
         <div class="artwork-card">
-            <img src="images/archite.jpg" alt="Artwork 4">
+            <img src="assets/images/archite.jpg" alt="Artwork 4">
             <h2>Modern Tranquility</h2>
             <button onclick="viewMore('artwork4')">View More <i class="fa-solid fa-eye"></i></button>
         </div>
         <div class="artwork-card">
-            <img src="images/digitalart.jpg" alt="Artwork 5">
+            <img src="assets/images/digitalart.jpg" alt="Artwork 5">
             <h2>Digital Harmony</h2>
             <button onclick="viewMore('artwork5')">View More <i class="fa-solid fa-eye"></i></button>
         </div>
@@ -108,7 +108,7 @@
     <div id="artwork1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('artwork1')">&times;</span>
-            <img src="images/pic.jpg" alt="Artwork 1">
+            <img src="assets/images/pic.jpg" alt="Artwork 1">
             <h2>Reflection of Serenity</h2>
             <p>Isabella Marquez</p>
             <p>This captivating painting portrays a girl immersed in thought, her serene expression beautifully captured with delicate brushstrokes. The artist masterfully blends vibrant colors and soft shadows, creating a sense of depth and emotion. </p>
@@ -118,7 +118,7 @@
     <div id="artwork2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('artwork2')">&times;</span>
-            <img src="images/wood.jpg" alt="Artwork 2">
+            <img src="assets/images/wood.jpg" alt="Artwork 2">
             <h2>Ethereal Grace</h2>
             <p>Lucas Reinhart</p>
             <p>"Ethereal Grace" is a stunning wood sculpture that captures the delicate balance between strength and fragility. Carved from a single piece of rich mahogany</p>
@@ -128,7 +128,7 @@
     <div id="artwork3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('artwork3')">&times;</span>
-            <img src="images/photoo.jpg" alt="Artwork 3">
+            <img src="assets/images/photoo.jpg" alt="Artwork 3">
             <h2>Captured Moments</h2>
             <p>Emily Hart</p>
             <p>"Captured Moments" is a captivating collection of photographs that showcase the beauty and diversity of everyday life. The inclusion of a classic camera in the display emphasizes the artistry and craftsmanship behind each shot, reminding viewers of the timeless nature of photography.</p>
@@ -138,7 +138,7 @@
     <div id="artwork4" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('artwork4')">&times;</span>
-            <img src="images/archite.jpg" alt="Artwork 4">
+            <img src="assets/images/archite.jpg" alt="Artwork 4">
             <h2>Modern Tranquility</h2>
             <p>Alexander Foster</p>
             <p>"Modern Tranquility" is a meticulously detailed architectural drawing that envisions a contemporary living room designed for comfort and elegance.</p>
@@ -148,7 +148,7 @@
     <div id="artwork5" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('artwork5')">&times;</span>
-            <img src="images/digitalart.jpg" alt="Artwork 5">
+            <img src="assets/images/digitalart.jpg" alt="Artwork 5">
             <h2>Digital Harmony</h2>
             <p> Sophia Lang</p>
             <p>"Digital Harmony" is a striking digital art piece that captures the essence of a modern living room through vibrant colors and dynamic composition. Sophia Lang utilizes cutting-edge digital techniques to create an immersive and visually appealing scene, where every element from the furniture to the decor is meticulously crafted</p>
@@ -158,7 +158,7 @@
 
     <section class="artist-section">
         <div class="artist-content">
-            <img src="images/sun.jpg" alt="Artist Image">
+            <img src="assets/images/sun.jpg" alt="Artist Image">
             <div class="artist-info">
                 <h2>Celeste Albright</h2>
                 <p>"Sunset at Sea" is a mesmerizing painting capturing the serene beauty of the ocean as the sun dips below the horizon. The vibrant hues of orange, pink, and purple blend seamlessly, reflecting off the calm waters to create a stunning display of nature's splendor.</p>
@@ -172,14 +172,14 @@
                 <h2>Vivian Rosetti</h2>
                 <p>"Elegance in Stone" is a striking vase sculpture that embodies timeless sophistication and grace. Crafted with meticulous attention to detail, this sculpture showcases a harmonious blend of smooth curves and intricate patterns. </p>
             </div>
-            <img src="images/sculpt.jpg" alt="Artist Image" class="sculpt">
+            <img src="assets/images/sculpt.jpg" alt="Artist Image" class="sculpt">
         </div>
     </section>
     
     </section>
     <section class="artist-section">
         <div class="artist-content">
-            <img src="images/moon.jpg" alt="Artist Image">
+            <img src="assets/images/moon.jpg" alt="Artist Image">
             <div class="artist-info">
                 <h2>Aurora Bellamy</h2>
                 <p>"Moonlit Rome" captures the enchanting allure of the Eternal City under the night sky. The photograph presents Rome’s iconic landmarks bathed in the soft, silvery glow of a full moon, casting an ethereal light over ancient streets and majestic architecture. The contrast between the deep, velvety shadows and the moon’s luminous embrace creates a captivating scene that highlights the city’s timeless beauty.</p>
@@ -191,7 +191,7 @@
         <h2>WORLDWIDE ARTISTS</h2>
         <div class="artists-container">
             <div class="artist-profile">
-                <img src="images/leonardo.jpg" alt="Artist 1">
+                <img src="assets/images/leonardo.jpg" alt="Artist 1">
                 <h3>Leonardo Da Vinci</h3>
                 <p>Leonardo da Vinci (1452-1519) was an Italian Renaissance artist, scientist, and polymath.Leonardo's artistic style is characterized by his keen observation of nature, and innovative techniques. He is known for his use of sfumato, a technique that creates a soft, gradual transition between colors and tones, lending a lifelike quality to his paintings.Leonardo excelled in multiple fields, including painting, drawing, engineering, anatomy, and physics.
                     Mona Lisa (La Gioconda): Perhaps the most famous painting in the world, known for its enigmatic smile and masterful use of sfumato.
@@ -199,7 +199,7 @@
                     Vitruvian Man: A drawing that explores the proportions of the human body, illustrating the blend of art and science in Leonardo's work.Leonardo da Vinci's legacy as a master of both art and science endures, making him an enduring symbol of the Renaissance spirit of inquiry and creativity. His works continue to inspire and influence artists, scientists, and thinkers around the world.</p>
             </div>
             <div class="artist-profile">
-                <img src="images/johannes.jpg" alt="Artist 2">
+                <img src="assets/images/johannes.jpg" alt="Artist 2">
                 <h3>Johannes Vermeer</h3>
                 <p>Johannes Vermeer (1632-1675) was a Dutch Baroque painter renowned for his masterful use of light and color.Vermeer's artistic style is characterized by his meticulous attention to detail. He often used a technique known as "pointillé," a type of fine dotting to create texture and depth. Notable Works
                     Girl with a Pearl Earring: Often referred to as the "Mona Lisa of the North," this painting is celebrated for its captivating portrayal of a young girl turning toward the viewer, her expression both enigmatic and engaging.
@@ -207,7 +207,7 @@
                     The Art of Painting: Also known as "The Allegory of Painting," this work is believed to be a self-portrait of Vermeer, illustrating an artist at work in his studio, with a model posed as Clio, the muse of history.Johannes Vermeer's legacy is defined by his exquisite treatment of light and his ability to infuse everyday scenes with a sense of timeless beauty. His work continues to be celebrated and studied, making him one of the most revered painters in the history of Western art.</p>
             </div>
             <div class="artist-profile">
-                <img src="images/VanG.jpg" alt="Artist 2">
+                <img src="assets/images/VanG.jpg" alt="Artist 2">
                 <h3>Van Gogh</h3>
                 <p>Vincent van Gogh (1853-1890) was a Dutch Post-Impressionist painter whose work has had a profound and lasting impact on the art world.Van Gogh's style is characterized by bold, dramatic brush strokes, vibrant colors, and emotional intensity. He often used thick applications of paint, known as impasto, to add texture to his works.His style evolved significantly over his short career, moving from dark tones to the bright, expressive palettes for which he is best known.Although Van Gogh created over 2,100 artworks, including around 860 oil paintings, he was not successful and sold very few pieces.
                     Starry Night: One of Van Gogh's most famous paintings, this work depicts a swirling night sky over a quiet town, showcasing his unique ability to convey movement and emotion through color and form.
@@ -243,9 +243,9 @@
             <div class="footer-section follow">
                 <h3>Follow Us</h3>
                 <ul class="socials">
-                    <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="images/instagram.webp" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="assets/images/instagram.webp" alt="Instagram"></a></li>
                 </ul>
             </div>
         </div>
