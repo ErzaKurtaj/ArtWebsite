@@ -7,14 +7,14 @@ A multi-page static website exploring different forms of visual art — painting
 | Page | File | Description |
 |------|------|-------------|
 | Home | `index.html` | Landing page with art type overviews and upcoming events |
-| Painting | `painting.html` | History, gallery, and tools for painters |
-| Sculpture | `sculpture.html` | 3D rotating cube showcase and history |
-| Photography | `photography.html` | History and gallery |
-| Architecture | `architecture.html` | History and gallery |
-| Digital Art | `digital.html` | History and digital gallery |
-| Artwork Presentations | `artwork.html` | Exhibitions, artist spotlights, modals, canvas drawing tool |
-| Techniques | `interview.html` | Art technique guides and supply reviews |
-| About Us | `about.html` | Mission, services, timeline, and testimonials |
+| Painting | `pages/painting.html` | History, gallery, and tools for painters |
+| Sculpture | `pages/sculpture.html` | 3D rotating cube showcase and history |
+| Photography | `pages/photography.html` | History and gallery |
+| Architecture | `pages/architecture.html` | History and gallery |
+| Digital Art | `pages/digital.html` | History and digital gallery |
+| Artwork Presentations | `pages/artwork.html` | Exhibitions, artist spotlights, modals, canvas drawing tool |
+| Techniques | `pages/interview.html` | Art technique guides and supply reviews |
+| About Us | `pages/about.html` | Mission, services, timeline, and testimonials |
 
 ## Running the project
 
@@ -36,29 +36,33 @@ Then open `http://localhost:3000`.
 
 ```
 Art/
+├── index.html
+├── README.md
+│
+├── pages/
+│   ├── about.html
+│   ├── architecture.html
+│   ├── artwork.html
+│   ├── digital.html
+│   ├── interview.html
+│   ├── painting.html
+│   ├── photography.html
+│   └── sculpture.html
+│
 ├── assets/
 │   ├── css/
+│   │   ├── base.css         # Design tokens, body, footer, shared animations
 │   │   ├── navbar.css       # Shared responsive navbar (BEM, accessible)
-│   │   ├── art-page.css     # Shared styles for photography, architecture, digital
 │   │   ├── style.css        # Home page
 │   │   ├── about.css        # About page (timeline, testimonials)
 │   │   ├── artwork.css      # Artwork presentations (modals, gallery, canvas)
 │   │   ├── interview.css    # Techniques page
 │   │   ├── painting.css     # Painting page (photo grid, tools)
-│   │   └── sculpture.css    # Sculpture page (3D CSS cube)
+│   │   ├── sculpture.css    # Sculpture page (3D CSS cube)
+│   │   └── art-page.css     # Shared for photography, architecture, digital
 │   ├── images/              # All image assets (JPG, PNG, WEBP, AVIF)
 │   └── js/
 │       └── main.js          # Navbar toggle, modals, canvas drawing
-├── index.html
-├── about.html
-├── artwork.html
-├── interview.html
-├── painting.html
-├── sculpture.html
-├── photography.html
-├── architecture.html
-├── digital.html
-└── README.md
 ```
 
 ## Tech stack
